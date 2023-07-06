@@ -1,0 +1,113 @@
+Can't be described with predicate logic: 
+
+    Below is not a proposition since x is not defined
+    $x^2 = 4$
+
+    * It's not a proposition, as its truth  value is a function depending on x
+
+    * This can't be exxpressed with propositional logic but predicate logic
+      will enable us to formalise it.
+
+== Universal quantifier ==
+    <span style="color:#b16286;">Definition:</span>
+        * The universal quantification of a predicate P(x) is the proposition:
+            * "P(x) is true for all values of x in the universe of discourse"
+            * We use the notation:
+             $\forall x\ P(x)$
+             which is read "for all x"
+        
+        If the universe of discourse is finite, say $\{n_1, n_2,...,n_k\},$
+        then the universal quantifier is simply the conjunction of the
+        propositios over all the elements:
+        $\forall x\ P(x) \leftrightarrow P(n_1) \land P(n_2) \land...\land P(n_k)$
+
+
+
+    Every CS student must take a discrete mathematics course.
+    $\forall x\ Q(x) \rightarrow P(x)$
+
+    Everybody must take a discrete mathematics course or be a CS student
+    
+    $\forall x\ Q(x) \lor P(x)$
+    
+    Everybody must take a discrete mathematics course and be a CS student
+    
+    $\forall x\ Q(x) \land P(x)$
+    
+== Existential quantifier ==
+    <span style="color:#b16286;">Definition:</span>
+        * The existential quantification of a predicate P(x) is the
+          proposition:
+            * "There exists a value x in the universe of discourse such that
+              P(x) is true" 
+        * We use the notation:
+         $\exists x\ P(x)$
+         which is read "there exists x".
+        
+        If the universe of discourse is finite, say $\{n_1, n_2,...,n_k\},$
+        then the existential quantifier is simply the disjunction of the
+        propositions over all the elements:
+        $\exists x\ P(x) \leftrightarrow P(n_1) \lor P(n_2) \lor...\lor P(n_k)$
+        
+        Examples:
+        
+        Let P(x,y) denote the statement "x + y = 5". The expression:
+        $E: \exists x \exists y\ P(x, y)$
+        means:
+         
+        * "there exists a value x and a value y in the universe of discourse
+          such that x +  y = 5 is true."
+
+== Uniqueness quantifier ==
+    <span style="color:#b16286;">Definition:</span>
+        * The uniqueness quantification of a predicate P(x) is the
+          proposition:
+            * "There exists a unique value x in the universe of discourse such that
+              P(x) is true" 
+        * We use the notation:
+         $\exists! x\ P(x)$
+         which is read "there exists a unique x".
+
+        Examples:
+        
+        Let P(x) denote the statement $x^2 = 4$
+        * The expression $E: \exists!x\ P(x)$ means:
+            * "There exists a unique value x in the universe of discourse such
+              that $x^2 = 4$ is true."
+        
+        For instance
+        * If the universe of discourse is positive integers, E is True ( as x =
+          2 is the unique solution)
+        
+== Nested quantifiers ==
+$\forall x\forall y\ P(x, y) = P(x, y)\ is\ true\ for\ every\ pair\ x,\ y.$
+$\exists x \exists y\ P(x, y) = There\ is\ a\ pair\ x,\ y\ for\ which\ P(x, y)\ is\ true$
+$\forall x \exists y\ P(x, y) = For\ every\ x\ there\ is\ a\ y\ for\ which\ P(x,\ y)\ is\ true.$
+$\exists x \forall y\ P(x,y) = There\ is\ an\ x\ for\ which\ P(x, y)\ is\ true$
+
+== Binding variables ==
+    * A variable is said to be bound if it is within the scope of a quantifier
+    * A variable is free if it is not bound by a quantifier or particular values.
+
+Example:
+    * Let P be a propositiona; function
+    * And S the statement: $\exists x\ P(x, y)$
+    * We can say that:
+        * x is bound
+        * y is free
+
+== Logical operations == 
+Examples:
+    * If P(x) denotes "x > 3" and Q(x) denotes "x squared is even" then:
+        * $\exists x\ (P(x)\land Q(x))\equiv T\ (ex.\ x\ =\ 4)$
+        * $\forall x\ (P(x)\rightarrow Q(x))\equiv F\ (ex.\ x\ =\ 5)$
+
+== Order of operations == 
+    * $\forall x\forall y\ P(x, y)\equiv\forall y\forall x\ P(x, y)$
+    * $\exists x\exists y\ P(x, y)\equiv\exists y\exists x\ P(x, y)$
+    * $\forall x\exists y\ P(x, y)\ is\ different\ from\exists y\forall x\ P(x, y)$
+
+The quantiefiers
+$\forall and \exists$
+have a higher presedence priority than all logical operators.
+

@@ -1,0 +1,5 @@
+%%to search
+ctrl k
+
+%%to go back in history
+alt left arrow 

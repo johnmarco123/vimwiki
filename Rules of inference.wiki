@@ -1,0 +1,179 @@
+== Valid argument ==
+    * An argument in propositional logic is a sequence of propositions
+    * The final proposition is called the conclusion and the other propositions
+      in the argument are called the premises (or hypotheses)
+    * An argument is valid if the truth of all its premises implies the truth
+      of the conclusion.
+    
+= Modus ponens = 
+    * Tautology: $(p\land(p\rightarrow q))\rightarrow q$
+    * The rule of inference:
+        * $p\rightarrow q$
+        * $p$
+        * -------------
+        * $\therefore q$
+    Example
+    * p: "it is snowing." q: "I will study Discrete Mathematics"
+    * "If it is snowing, I will study Discrete Mathematics"
+    * "It is snowing."
+     ---------------
+    * Therefore: "I will study discrete mathematics."
+
+= Modus tollens = 
+    * Tautology: $(\lnot q\land(p\rightarrow q))\rightarrow\lnot p$
+    * The rule of inference:
+        * $\lnot q$
+        * $p\rightarrow q$
+        * -------------
+        * $\therefore\lnot p$
+    Example
+    * p: "it is snowing." q: "I will study Discrete Mathematics"
+    * "If it is snowing, I will study Discrete Mathematics"
+    * "I will not study Discrete Mathematics"
+     ---------------
+    * Therefore: "It is not snowing."
+
+= Conjunction =
+    * Tautology: $((p)\land(q))\rightarrow(p\land q)$
+    * The rule of inference 
+        * $p$
+        * $q$
+        * -------------
+        * $p\land q$
+
+    Example
+    * p: "I will study Programming." q:"I will study Discrete Mathematics."
+    * "I will study Programming."
+    * "I will study Discrete Mathematics."
+    -------------------------------------------------- 
+    * Therefore: "I will study Programming and Discrete Mathematics"
+
+= Simplification =
+    * Tautology: $(p\land q)\rightarrow p$
+    * The rule of inference 
+        * $(p\land q)$
+        * -------------
+        * $p$
+
+    Example
+    * p:"I will study Discrete Mathematics."
+    * q:"I will study Programming." 
+    * "I will study Discrete Mathematics and programming"
+    ------------------------------------------------------ 
+    * Therefore: "I will study Discrete Mathematics."
+
+= Addition =
+    * Tautology: $p\rightarrow(p\lor q)$
+    * The rule of inference 
+        * $p$
+        * -------------
+        * $\therefore(p\lor q)$
+
+    Example
+    * p:"I will visit Paris"
+    * q:"I will study Discrete Mathematics " 
+    * "I will visit Paris"
+    ------------------------------------------------------ 
+    * Therefore: "I will visit Paris or I will study Discrete Mathematics"
+
+= Hypothetical syllogism =
+    * Tautology: $((p\rightarrow q)\land(p\rightarrow r))\rightarrow(p\rightarrow r)$
+    * The rule of inference 
+        * $p\rightarrow q$
+        * -------------
+        * $\therefore(q\land r)$
+
+    Example
+    * p:"It is snowing"
+    * q:"I will study Discrete Mathematics " 
+    * "If it is snowing, I will study Discrete Mathematics "
+    * "If I study Discrete Mathematics, I will pass the quizzes."
+    ------------------------------------------------------ 
+    * Therefore: "If it is snowing, I will pass the quizzes."
+
+= Disjunctive syllogism =
+    * Tautology: $((p\lor q)\land\lnot p)\rightarrow q$
+    * The rule of inference 
+        * $p\lor q$
+        * $\lnot p$
+        * -------------
+        * $q$
+
+    Example
+    * q:"I will study Art"
+    * p:"I will study Discrete Mathematics" 
+    * "I will study Discrete Mathematics or I will study Art"
+    * "I will not study Discrete Mathematics"
+    ------------------------------------------------------ 
+    * Therefore: "I will study Art"
+
+= Resolution =
+    * Tautology: $((p\lor q)\land(\lnot p\lor r))\rightarrow (q\lor r)$
+    * The rule of inference 
+        * $p\lor q$
+        * $\lnot p\lor r$
+        * -------------
+        * $q\lor r$
+
+    Example
+    * q:"It is raining."
+    * p:"It is snowing." 
+    * r:"It is cold." 
+    * "It is raining or it is snowing."
+    ------------------------------------------------------ 
+    * Therefore: "It is snowing or It is cold."
+
+= Building a valid argument =
+    * To build a valid argument we need to follow the steps below:
+        * If initially written in English, transform the statement into an
+          argument form by achoosing a variable for each simple proposition
+        * Start with the hypothesis of the argument
+        * Build a sequence of steps in swhich each step follows from the
+          previous step by applying:
+            * rules of inference
+            * laws of logic
+        * The final step of the argument is the conclusion.
+EXAMPLE 1.)
+Let's build a valid argument from the following premises:
+$\lnot p:"It\ is\ not\ cold\ tonight."$
+$q\rightarrow p:"We\ will\ go\ to\ the\ theatre\ only\ if\ it\ is\ cold"$
+$\lnot q\rightarrow r:"If\ we\ do\ not\ go\ to\ the\ theatre\, we\ will\ watch\ a movie\ at\ home."$
+$r\rightarrow s:"If\ we\ watch\ a movie\ at\ home\, we\ will\ need\ to\ make\ popcorn."$
+
+Propositional variables:
+$p:"It\ is\ cold\ tonight." $
+$q:"We\ wil\ go\ to\ the\ theatre."$
+$r:"We\ will\ watch\ a\ movie\ at\ home."$
+$s:"We\ will\ need\ to\ make\ popcorn"$
+
+1.)$p\rightarrow q$       <--Hypothesis
+2.)$\lnot p$              <--Hypothesis
+3.)$\therefore \lnot q$   <-- Modus tollens 1, 2
+4.)$\lnot q\rightarrow r$ <--Hypothesis
+5.)$\therefore r$         <--Modus tollens 3, 4
+6.)$r\rightarrow s$       <--Hypothesis
+7.)$\therefore s$         <--Modus tollens 5, 6
+
+<span style="color:#cc241d;">Conclusion: "We will need to make popcorn."</span>
+
+= Fallacies =
+    * A fallacy is the use of a incorrect argument when reasoning
+    * Formal fallacies can be expressed in propositional logic and proved to be
+      incorrect
+    * Some of the widely used formal fallacies are:
+        * affirming the consequent
+        * a conclusion that denies premises
+        * contradictory premises
+        * denying the antecedent
+        * existential fallacy
+        * exclusive premesis.
+EXAMPLE
+    * Let's consider the following argument:
+        * If you have internet access, you can order this book
+        * You can order this book
+       ---------------------------------------------------------- 
+    * This argument can be formalised as: if p -> q and q, then p
+    * Where p: "You have Internet access."
+    *       q: "you can order this book."
+    * The proposition $((p\rightarrow q)\land q)\rightarrow p$ 
+      is not a tautology, because it is false when p is false and q is true

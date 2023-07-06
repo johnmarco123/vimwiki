@@ -1,0 +1,18 @@
+Having Multiple Owners of Mutable Data by Combining Rc<T> and RefCell<T>
+
+A common way to use RefCell<T> is in combination with Rc<T>. Recall that Rc<T>
+lets you have multiple owners of some data, but it only gives immutable access
+to that data. If you have an Rc<T> that holds a RefCell<T>, you can get a value
+that can have multiple owners and that you can mutate!
+
+For example, recall the cons list example in Listing 15-18 where we used Rc<T>
+to allow multiple lists to share ownership of another list. Because Rc<T> holds
+only immutable values, we can’t change any of the values in the list once we’ve
+created them. Let’s add in RefCell<T> to gain the ability to change the values
+in the lists. Listing 15-24 shows that by using a RefCell<T> in the Cons
+definition, we can modify the value stored in all the lists:
+
+Note that RefCell<T> does not work for multithreaded code! Mutex<T> is the
+thread-safe version of RefCell<T> and we’ll discuss Mutex<T> in Chapter 16.
+
+use Arc<T> for multiple threads insteasd of Rc<T>

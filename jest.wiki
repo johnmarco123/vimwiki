@@ -1,0 +1,35 @@
+== TypeScript ==
+
+1.) npm init
+2.) npm install --save-dev jest ts-jest @types/jest
+
+3.) Edit your scripts so it looks like this:
+        
+        "scripts": {
+           "test": "jest"
+        },
+        
+4.) npx ts-jest config:init
+
+5.) Sometimes theres an annoying error that pops up. Add this to your
+jest.config.js to disable it.
+
+transform: {
+    '^.+\\.(ts|tsx)?$': ['ts-jest', {diagnostics: {ignoreCodes: ['TS151001']}}],
+    "^.+\\.(js|jsx)$": "babel-jest",
+}
+
+== JavaScript ==
+
+1.) npm init
+2.) Make a .babelrc in root and paste this code in there
+{
+    "env": {
+      "test": {
+        "plugins": ["@babel/plugin-transform-modules-commonjs"]
+      }
+    }
+  }
+3.) Then dump this in terminal and click enter
+
+npm install --save-dev jest @babel/plugin-transform-modules-commonjs

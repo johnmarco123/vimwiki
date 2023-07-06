@@ -1,0 +1,64 @@
+AND -> $x.y$ = $x \land y$
+OR -> $x + y$ = $x \lor y$
+NOT -> $x'$ = $ \lnot x$
+
+When no parentheses are used this is the logical order:
+NOT > AND > OR
+
+
+Postulates of boolean algebra
+
+Huntington's postulates: 
+    1. Closure, the value of any Boolean operation is either zero or one.
+    2. Identity, the value of x plus 0 and x.1 is always equal to the value of x.
+    3. Distributivity $x + y = y + x$
+    4. Commutativity. Plus and dot are both commutative. That is, x plus y equals y plus x and x.y equals y.x. 
+    5. Complements. The logical sum of x and it's corresponding complement is
+       always equal to one where the logical products of x and its corresponding
+       complement is always equal to zero.
+    6. Distance elements, any Boolean algebra has to have two distinct values
+
+Basic Theorems
+    Idempotent laws
+       $x + x = x,\ x . x = x$ 
+    
+    Tautology and contradiction
+    $x + 1 = 1,\ x.0 = 0$
+    
+    Involution
+    $(x')' = x$
+    
+    Associative laws
+    $(x + y) + z = x + (y + z),\ (x . y) . z = x . (y . z) $
+    
+    Absorbtion laws
+    $x + (x . y) = x,\ x . (x + y) = x$
+    
+    Uniqueness of complement
+    if $y + x = 1\ and\ y.x = 0,\ then\ x = y'$
+    
+    Inversion law
+    $0' = 1,\ 1' = 0$
+    
+Principles:
+    
+    principle of duality:
+    A + BC = (A + B)(B + C) === A(B + C) = AB + BC
+    
+    
+Given the boolean function $F(x, y, z) = (x + \lnot y).\ z$
+write the sum of products expansion of F where all variables
+x, y, and z are used
+$F(x, y, z) = (x + \lnot y).\ z$
+$ \lnot y z + xz$                              <- Distrubitivity
+$(x + \lnot x)\lnot yz + x(y+\lnot y)z$        <- identity
+$x\lnot yz + \lnot x\lnot yz + xyz + x\lnot yz$<- Distrubitivity
+$x\lnot yz + \lnot x\lnot yz + xyz$            <- idempotent law
+
+
+
+
+
+
+
+

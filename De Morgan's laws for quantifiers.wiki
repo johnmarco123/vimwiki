@@ -1,0 +1,30 @@
+== De Morgan's laws for negating quantifiers: ==
+$\lnot\forall x\ P(x)\equiv\exists x\lnot\ P(x)$
+$\lnot\exists x\ P(x)\equiv\forall x\lnot\ P(x)$
+
+Examples:
+
+    Example 1.) Let S: "Every student of Computer Science has taken a course in neural
+    networks"
+        * S can be expressed as$\forall x\ P(x)$
+        * U = {students in CS}
+        * P(x): "x has taken a course in Neural Networks"
+    
+    The negation of S
+        * "It is not the case that every student of Computer Science has taken
+          a course in Neural Networks."
+        * $\lnot(\forall x\ P(x))\equiv\exists x\lnot P(x)$
+        * This implies that: "There is at least one student who has not taken a
+          course in Neural Networks." 
+    
+== Negating nested quantifiers ==
+    $\lnot\forall x\exists y\forall z\ P(x, y, z)$
+    $\equiv\exists x\lnot\exists y\forall z\ P(x, y, z)$
+    $\equiv\exists x\forall y\lnot\forall P(x, y, z)$
+    $\equiv\exists x\forall y\exists z\lnot P(x, y, z)$
+    
+    $\lnot\forall x\exists y\forall z\ P(x, y, z)$
+    is built by moving the nagation the to the right through all the
+    quantifiers and replacing each $\forall with \exists$ and vice versa.
+    
+    

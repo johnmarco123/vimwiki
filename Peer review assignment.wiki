@@ -1,0 +1,50 @@
+
+===================peer graded assignment propositional logic ================
+Let a be a set with $A = \{n: n\epsilon  \mathbb{Z}^+\ and\ n < 16\}$
+and p, q and r be three propositions concerning an integer n in A. 
+p means 'n is an odd number'
+q means 'n is a prime number'
+r means 'n is less then 8'
+
+question a.) find the truth set of the following logical expression:
+    $p \land q;\ p \oplus q;\ p \rightarrow q;\ and\ r \rightarrow q$
+        
+    $p:\{1, 3, 5, 7, 9, 11, 13, 15\}$
+    $q:\{2, 3, 5, 7, 11, 13\}$
+    $r:\{1, 2, 3, 4, 5, 6, 7\}$
+
+    $p\land q = \{3, 5, 7, 11, 13\}$ 
+    $p \oplus q = \{1, 2, 9, 15\}$
+    $p\rightarrow q = \{2,3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14\}$
+    $r \rightarrow q = \{2, 3, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15\}$
+
+
+question b.) Express each of the four following compound propositions using p,
+q, r, and appropiate logical symbols:
+
+    - 'n is neither odd nor is a prime number' 
+    $\lnot p \land \lnot q$
+   $\lnot(p \lor q)$ <- suggested answer, basically make sure you simplify
+
+    - 'if n is odd and n less than 8 then n is a prime number' 
+    $(p \land r) \rightarrow q$
+
+    - 'n is a prime number only if n is odd' 
+    $q \rightarrow p$
+
+    - 'n is a prime number if n is odd' 
+    $p \rightarrow q$
+
+question c.) Write in words the contrapositive of the statement given
+symbolicaly by 'q -> p'
+    $if\ not \ p, \ then \ not \ q$
+
+question 2.) let p and q be two propositions. Using the laws of propositional
+logic seen in this topic, show that $(p \rightarrow q) \land p\ =\ p \land q$
+
+$(p \rightarrow q) \land p$
+$(\lnot p \lor q) \land p$ <- implication law
+$p \land (\lnot p \lor q)$ <- associative law
+$(p \land \lnot p) \lor (p \land q)$ <- distributive law
+$F \lor (p \land q)$ <- negation law
+$p \land q$ <- associative law

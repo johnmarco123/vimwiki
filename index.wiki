@@ -1,0 +1,114 @@
+[[Gesh Stuff]]
+= languages =
+    * [[javascript]]
+    * [[typescript]]
+    * python
+    * [[rust]]
+    * [[lua]]
+  
+= Completed projects =
+* [X] finish the rust doc.rust-lang.org book
+* [X] Made a basic web server in rust that uses thread pools to respond
+      asyncronously. It can also gracefully shut down which means it 
+      cleans up all the treads in the pool before exiting pool.
+* [X] Made my own webserver in rust from a basic tcp connection
+
+====== CURRENT ======     
+* Study algorithms in the algorithms and data structures book
+====== NEXT ======     
+
+= TODO =
+
+* [.] learn data structures and algs from the book im reading
+  
+        * [X] heaps
+            * [X] Max priority queue
+            * [X] Min heap
+        * [ ] Trees
+            * [ ] Binary trees
+            * [ ] Red black trees
+        * [X] Queues
+            * [X] Queue made of two stacks
+        * [X] Stacks
+            * [X] Stack made of two queues
+        * [ ] Graphs
+        * [ ] Hash structures
+        * [ ] Tries
+        * [ ] Array
+        * [X] Linked list
+        * [O] Sorting algorithms
+            * [X] Insertion sort
+            * [X] Bubble sort
+            * [X] Heap sort
+            * [X] Quick sort
+            * [X] Counting sort
+            * [X] Radix sort
+            * [X] Bucket sort
+            * [ ] Merge sort??? <-- look into this some time later...
+
+    * [ ] Make a compiler in rust
+    
+    * [ ] Read design patterns book
+        * [ ] Chapter 1
+        * [ ] Chapter 2
+        * [ ] Chapter 3
+        * [ ] Chapter 4
+        * [ ] Chapter 5
+        * [ ] Chapter 6
+        * [ ] Chapter 7
+        * [ ] Chapter 8
+        * [ ] Chapter 9
+        * [ ] Chapter 10
+        * [ ] Chapter 11
+        * [ ] Chapter 12
+        * [ ] Make a fullstack working website using typescript / javascript
+    * [ ] Start on the drawing app project and see what i can come up with
+    * [ ] Embeded browser in neovim written in rust
+    * [ ] Completely finish my github pages website
+    * [ ] Make a fully functioning video chat application in rust? or react?
+    * [ ] Learn how to make smart contracts with theprimagen front end masters
+
+= workflow =
+    * [[github]] 
+    * [[productivity boosters]]
+    * [[lsp]]
+    * [[brave]]
+    * [[clean code]]
+
+= school =
+    * [[school todo]] 
+    * [[discrete mathematics]]
+    * [[introduction to programming 2]]
+    * [[algorithms and data structures]]
+
+= general info =
+    * [[SSH on windows]]
+    * [[vim commands info]]
+    * [[jest]]
+    * [[advent_of_code]]
+
+= therapy =
+    * [[therapy notes]]
+
+= vimwiki commands =
+<span style="color:#cc241d;">    * leader commands </span>
+        * <leader>wg -> check check box wiki go
+        * <leader> wc to color
+        * <Leader>ww -- Open default wiki index file.
+        * <Leader>wt -- Open default wiki index file in a new tab.
+        * <Leader>ws -- Select and open wiki index file.
+        * <Leader>wd -- Delete wiki file you are in.
+        * <Leader>wr -- Rename wiki file you are in.
+        * <Enter> -- Follow/Create wiki link.
+        * <Shift-Enter> -- Split and follow/create wiki link.
+        * <Ctrl-Enter> -- Vertical split and follow/create wiki link.
+        * <Backspace> -- Go back to parent(previous) wiki link.
+        * <Tab> -- Find next wiki link.
+        * <Shift-Tab> -- Find previous wiki link. 
+<span style="color:#458588;">    * g commands </span>
+        * gl* makes a new menu item
+        * glx turns it to a checkable checkbox
+        * gnt find new unfinished task in current page
+        * gl<space> remove checkbox from list item
+        * gln increases done status glp decreases
+        * gll increases indent glh decreases indent

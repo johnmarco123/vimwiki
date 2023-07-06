@@ -1,0 +1,50 @@
+<span style="color:#cc241d;">SUMMARY:</span>
+
+Tuples are fixed-size collections of elements with potentially
+different types
+
+Arrays are fixed-size collections of elements with the same type
+
+Vectors are dynamic, growable collections of elements with the
+same type.
+
+<span style="color:#d65d0e;">DESCRIPTION</span>
+
+Tuple:
+A tuple is an ordered collection of elements with a fixed length.
+Each element within a tuple can have a different type. Tuples are
+defined using parentheses and commas to separate the elements.
+Tuples can be accessed by indexing, using dot notation, or through
+pattern matching. Tuples have a fixed size determined at
+compile-time and cannot be resized.
+
+Example: (1, "hello", 3.14)
+
+Array:
+An array is a fixed-size collection of elements of the same type.
+Arrays are defined using square brackets and commas to separate
+the elements. Arrays have a fixed size determined at compile-time
+and cannot be resized. Array elements can be accessed by indexing.
+Rust arrays are stack-allocated and have a fixed length, making
+them suitable for situations where the length is known and doesn't
+change.
+
+<span style="color:#cc241d;">Arrays typically do not contain a length
+property, alike a vector, therefore they must store it in a element,
+aka to implament a vector with an array we must make a array of size
+n + 1 (the 1 to store the length</span>
+
+
+Example: [1, 2, 3, 4, 5]
+
+Vector:
+A vector, also known as Vec, is a dynamic, growable array. Vectors
+are defined using the Vec type and angle brackets (< and >) with
+the element type specified. Vectors can be created empty or with
+an initial set of elements. Vectors can grow or shrink in size
+dynamically during runtime. Vector elements can be accessed by
+indexing. Vectors are heap-allocated and provide additional
+operations like pushing, popping, and resizing. Vectors are
+commonly used when you need a collection that can change in size.
+
+Example: vec![1, 2, 3, 4, 5]

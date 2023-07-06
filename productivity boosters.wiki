@@ -1,0 +1,2 @@
+cht.sh <-- for neovim is amazing
+and also bug.n

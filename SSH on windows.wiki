@@ -1,0 +1,13 @@
+if client has server your all good, you need client on ur pc
+
+Get-WindowsCapability -Online -Name OpenSSh.Server
+Get-WindowsCapability -Online -Name OpenSSh.client
+
+shows the services that have ssh
+Get-Service -Name ssh*
+
+== STARTS THE SERVER == 
+
+Start-Service sshd
+
+ssh J@192.168.2.21

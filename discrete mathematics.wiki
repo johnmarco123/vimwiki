@@ -1,0 +1,16 @@
+* [[self_made_cheat_sheet]]
+* [[how to use latex]] 
+ 
+* [[laws]]
+* [[truth tables and conditional statements]]
+* [[predicate logic ]]
+* [[Rules of inference]]
+* [[Rules of inference with quantifiers]]
+* [[boolean algebra terms]]
+* [[discrete_math_mid_term]]
+* [[proof by induction]]
+ 
+* [[intro to proofs worksheet]]
+ 
+* [[Peer review assignment]]
+* [[Peer review assignment_2]]

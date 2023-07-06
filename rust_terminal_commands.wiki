@@ -1,0 +1,9 @@
+* <span style="color:#d65d0e;">rustc </span>-> compiles the program (can then execute it like an exe with
+  ./<filename> 
+* <span style="color:#d65d0e;">cargo build </span>compiles rust (moreso for development
+* <span style="color:#d65d0e;">cargo check</span> -> faster then cargo build, it just checks if its
+      compilable, rather than also making an executable
+* <span style="color:#d65d0e;">cargo build --release </span> is for when
+  the file is ready to be released and is completed. This takes long but
+  the executable runs faster.
+* 

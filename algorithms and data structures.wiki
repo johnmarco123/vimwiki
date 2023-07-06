@@ -1,0 +1,12 @@
+[[Best time for algo katas]]
+
+ring buffer:
+    push_front -> O(1)
+    pop_front -> O(1)
+    push_back -> O(1)
+    pop_back -> O(1)
+    indexing -> O(1)
+    
+    growing when past capacity -> O(n)
+    deleting in middle O(n)
+    

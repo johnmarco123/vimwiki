@@ -1,0 +1,2 @@
+* [ ] make a neovim plugin that remembers the most recently used tabs
+* [ ] learn lua

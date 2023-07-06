@@ -1,0 +1,2 @@
+gh repo create <- push from terminal to my [[github]] 
+gh repo list <- shows my repos

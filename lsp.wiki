@@ -1,0 +1,12 @@
+normal gd -> go definition
+normal K -> show what it is and where in filesystem it is
+normal <leader>vws -> query for something
+normal <leader>vd -> show error message
+normal [d -> show next error message
+normal [d -> show prev error message
+normal <leader>vca -> fix error
+normal <leader>vrr -> show all references of whatever ur on
+normal <leader>vrn -> rename
+insert ctrl-h -> no idea??!
+
+<span style="color:#cc241d;">:LspRestart TO RESTART LSP!!! GOOD TO KNOW</span>

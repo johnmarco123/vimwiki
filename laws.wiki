@@ -1,0 +1,33 @@
+LAWS OF PROPOSITIONAL LOGIC
+                            Disjunction
+    De Morgan's laws|$\lnot(p \lor q) \equiv \lnot p \land \lnot q$
+    absorption laws |$ p \lor (p \land q) \equiv p$ 
+    negation laws   |$p \lor \lnot p \equiv T$
+    double negation law|$\lnot\lnot p \equiv p$
+    idempotent laws |$p \lor p\equiv p$
+    commutative laws|$p \lor q\equiv q \lor p $
+    associative laws| $(p \lor q) \lor r \equiv p \lor (q \lor r)$
+    distributive laws| $p \lor (q \land r) \equiv (p \lor q)\land(p \lor r)$
+    identity laws   | $p \lor F \equiv p$
+    domination laws | $p \lor T \equiv T$
+
+
+                            Conjunction  
+    De Morgan's laws|$\lnot(p \land q) \equiv \lnot p \lor \lnot q$
+    absorption laws |$ p \land (p \lor q) \equiv p$ 
+    negation laws   |$p \land \lnot p \equiv T$
+    idempotent laws |$p \land p\equiv p$
+    commutative laws|$p \land q\equiv q \land p $
+    associative laws| $(p \land q) \land r \equiv p \land (q \land r)$
+    distributive laws| $p \land (q \lor r) \equiv (p \land q)\lor(p \land r)$
+    identity laws   | $p \land F \equiv p$
+    domination laws | $p \land T \equiv T$
+
+    implication law    $p \rightarrow q \equiv \lnot p \lor q$
+
+    converse, contrapositive and inverse
+    let p and q be propositions and A the conditional statement p -> q
+    the proposition q -> p is the converse of A
+    the proposition$\lnot q$->$\lnot p$is the contrapositive of A
+    the proposition$\lnot p$->$\lnot q$is the inverse of A
+

@@ -1,0 +1,349 @@
+Question 1. Prove that the sum of any two even integers is even. In an other
+way show that: $\forall n,\ m\in\Z,$ if n and m are even numbers then n + m
+is also an even number.
+
+    Let $n,\ m\in\Z,$and assume that n and m are even, we need to show that n + m
+    is also even. We know that an even number is two times an integer i. This
+    can be represented as n = 2i, and m = 2j. Therefore n + m = 2i + 2j = 2(i + j).
+    Hence, there exists an integer k = i + j such n + m = 2k. It followed by
+    definition of even numbers that n + m is also even.
+    
+
+
+
+Question 2.) Use direct proof to show that: $\forall n,\ m\in\Z$ if n is an even
+number and m is an odd number then 3n + 2m is also an even number.
+    
+    Let $n,\ m\in\Z$ and assume n is even and m is odd. We know that an even integer
+    can be represented as n = 2i, and an odd integer can be represented as m = 2j + 1
+    Therefore, 3n + 2m = 3(2i) + 2(2j + 1)  
+                       = 6i + 4j + 2  
+                       = 2(3i + 2j + 1)
+    
+    Hence, there exists an integer k = 2(3i + 2j + 1) such 3n + 2m = 2k. It follows,
+    by definition of even numbers, that 3n + 2m is an even number
+    
+    
+    
+Question 3.) Prove that the sum of any two odd integers is EVEN. In an other way
+show that: $\forall n,\ m\in\Z,$ 
+if n and m are odd numbers then n + m is an even number.
+
+    Let $n,\ m\in\Z$ and assume n and m are both odd numbers. We know we can represent
+    odd integers like so: n = 2i + 1, m = 2j + 1. 
+    Therefore n + m = 2i + 1 + 2j + 1.
+                    = 2i + 2j + 2.
+                    = 2(i + j + 1).
+    
+   Hence, there exists an integer k = i + j + 1 such n + m = 2k. It follows, by
+   definition of even numbers, that n + m is an even number as well.
+    
+    
+Question 4.) Show that for any odd number integer n, $n^2$ is also odd. In
+another way show that: $\forall\ n\in\Z,\ \text{if n is odd then }n^2\ is\ also\ odd.$
+    
+   let $n\in\Z$ and assume n is an odd number. We can represent odd numbers like so:
+   n = 2i + 1. We need to show that there is an integer k such that $n^2 = 2k + 1$
+   Therefore $n^2 = (2i + 1)^2$
+                         $n^2 = (2i + 1)(2i + 1)$
+                         $n^2 = 4i^2 + 2i + 2i + 1$
+                         $n^2 = 4i^2 + 4i+ 1$
+                         $n^2 = 2(2i^2 + 2i) + 1$
+    
+    Hence, There exists an integer $k = 2i^2 + 2i\ such\ that\ n^2 = 2k+ 1 $
+    It follows, by definition of odd numbers, that $n^2$ is odd.
+    
+    
+    
+    
+Question 5.) Show that $\forall x\in\R\forall m\in\Z,\ \lfloor x + m \rfloor = \lfloor x\rfloor + m.$
+    
+   Let x be any real number, and m be any integer. We must show that 
+   $\lfloor x + m\rfloor = \lfloor x \rfloor + m$ 
+   
+    Let n be an integer with $\lfloor x\rfloor = n\ \text{By definition of the floor function,}$
+    it follows that:
+            
+        $n\le x < n + 1$
+        
+    by adding the value m to all parts of the inequality we obtain:
+            
+            $(n + m)\le (x + m) < (n + m) + 1$
+            
+    Hence, $\lfloor x + m \rfloor = n + m$
+    Finally, by substituting n by $\lfloor x\rfloor,\ we\ get\ \lfloor x + m\rfloor = \lfloor x\rfloor + m.$
+    This ends the proof.
+    
+    
+    
+Question 6.) Use proof by contraposition show that for any integer n, if $n^2$
+is even then n is even
+
+   $\text{If our equation is }p\rightarrow q\ \text{the contrapositive would be }\lnot q\rightarrow \lnot p$ 
+   Therefore, we will show that for any integer n, if $n^2$ is not even (is odd)
+   then $n$ is not even (is odd)
+   
+   We will assume that $n^2$ is an odd number. By the definition of odd numbers
+   this would mean that $n^2 = (2i + 1)^2$Knowing this we will prove that n is 
+   also a odd number, which is represented by $n = 2i + 1$.
+   
+   It follows that:
+                  $n^2 = (2i+1)^2$ 
+                  $n^2 = 4i^2 + 4i + 1$ 
+                  $n^2 = 2(2i^2 + 2i) + 1$ 
+                  $n^2 = 2i^2 + 2i$ 
+  is an integer as it is the sum of products of integers, Therefore there
+  exists k = $2i^2 + 2i$ such that $n^2 = 2k + 1$. Hence $n^2$ is an odd
+  number. Therefore, for all interger n, if $n^2$is also even. n is even.
+   
+    
+    
+    
+    
+Question 7.) Use proof by contraposition show that for any integer n if 
+$5\nmid n^2\ then\ 5\nmid n$
+
+    The contraposition would be for any integer n if $5\mid n\ then\ 5\mid n^2$
+    Suppose n is an integer such that $5\mid n$. We must show that $5\mid n^2$ 
+    By definition of divisibility $n = 5k$. By substitution: $n = 5k = 5(5k^2)$ 
+    hence, there exists an integer i = $5k^2$ such that $n^2 = 5i$. Hence,
+    $5\mid n^2$. Therefore any integer n, if $5\nmid n^2\ then\ 5\nmid n$
+
+
+
+
+
+Question 8.) Use proof by contradiction to show that for any integer n, if $n^2$
+is even then n is even
+    
+   Assume there exists an integer n such that $n^2$ is even and n is odd. n
+   is odd hence n can be written as $n = 2k + 1$ for some integer k. By substitution
+   it follows that $n^2 = (2k+1)^2$
+                   $n^2 = 4k^2 + 4k + 1$
+                   $n^2 = 2(2k^2 + 2k) + 1$
+    $2k^2 + 2k$  is an integer because the products and sums of integers are integers.
+    So there is an integer $i=2k^2 + 2\ with\ n^2 = 2i + 1,$ and thus by definition $n^2$
+    is odd. This is a contradiction of the hypothesis as $n^2$is even. This ends the proof.
+    
+    
+    
+    
+Question 9.) Use proof by contradiction to show that for any integer n, 3n + 2
+is not divisible by 3.
+
+    Assume there exists an integer n such that $3n + 2$ is divisible by 3.
+    Hence, there exists an integer k such that $k = 3m+2 = 3k $ and thus
+    $m = k - \frac{2}{3}$ Therefore m is not an integer and this contradicts our
+    initial hypothesis which says that m is an integers. Hence, $\forall n\in\Z,$
+    3n + 2 is not divisible by 3. This ends the proof.
+
+
+
+
+Question 10.) Use proof by contradiction to show that for any integer n, 7n + 4
+is not divisible by 7.
+
+    Assume there exists an integer n such that $7n + 4$ is divisible by 7.
+    Hence, there exists an integer k such that $7m + 4 = 7k$ and thus:
+    
+    $7k = 7m + 4$
+    
+    $7k - 4 = 7m$
+    
+    $\frac{7k - 4}{7} = 7m$
+    
+    $k - \frac{4}{7} = m$
+    
+    $m= k - \frac{4}{7} $
+    Therefore, m is not an integer and this contradicts our initial hypothesis
+    which says that m is an integers. Hence, $\forall\ n\in\Z,\ 7n+4$ 
+    is not divisible by 7. This ends the proof
+    
+    
+
+
+Question 11.) Write the following series in $\sum$notation 
+
+
+    1. 1 + 3 + 5 ... (2n - 1)
+
+    1 + 3 + 5 ... (2n - 1) = $\sum_{k = 1}^n (2n - 1)$
+
+
+
+    2. 1 + 2 + 4 + 8 + 16 + ... + 1024
+    
+    1 + 2 + 4 + 8 + 16 + ... + 1024 = $\sum_{k = 0}^10  (2 ^ k)$
+   
+    
+    
+    
+    
+Question 12.) Given the following formulae
+    
+    $\sum_{k=1}^n 1 = n\ \ \ \ \ \ \   \sum_{k=1}^n k = \frac{n(n + 1)}{2}$
+    
+    Evaluate the following:
+        
+        1. $\sum_{k=1}^10 (4k - 2)$
+         
+         
+         $\sum_{k=1}^10 (4k - 2)$
+         
+         $\sum_{k=1}^10 4k - \sum_{k=1}^10 2$
+         
+         $4\sum_{k=1}^10 k - 2\sum_{k=1}^10 1$
+         
+         $4\  \frac{10*11}{2} - 2 * 10 = 200$
+         
+         
+         
+         
+        2.  $\sum_{k = 41}^100 k$
+         
+            $\sum_{k = 41}^100 k = $
+         
+            $\sum_{k = 1}^100 k -\sum_{k = 1}^40 k = \frac{100*101}{2} - \frac{40 * 41}{2} = 5050 - 820 = 4230 $
+    
+    
+    
+    
+    
+    
+    
+        3. 3 + 6 + 9 + 12 + ... + 300
+        
+        $3 + 6 + 9 + 12 + ... + 300 =$
+       
+       $ \sum_{k = 1}^100 3k =$
+       
+       $ 3\sum_{k = 1}^100 k =$
+       
+       $ 3\ \frac{100 * 101}{2} = \frac{35050}{2}= 15150$
+
+
+        
+        
+    
+    
+
+
+Question 13.) Given the following arithmetic sequence:
+        
+        $a_n: 2, 5, 8, 11, 14, ...$
+        
+        1. Find the commin difference d
+
+            $Common\ difference\ is\ 3$
+
+
+
+
+
+        2. Calculate the next term;
+
+            $Next\ term\ is\ 17$
+
+
+
+
+
+        3. Write down the $n^th$term in terms of n.
+         
+           $a_n = a_1 + (n - 1)d = 2 + (n - 1)3 = 3n - 1$  
+         
+         
+         
+         
+        4. Let  $S_n=\sum_{k=1}^n a_n$ be the sum of the first nth terms of the
+           sequence. Write down $S_n$ in terms of n and $a_1$.
+
+
+            $Let\ S_n = \sum_{k=1}^n a_n = \frac{n(2a_1+(n-1)d)}{2} = \frac{{n(2*2+(n-1)3)}}{2} = \frac{3n^2+n}{2}$
+
+
+
+
+
+         
+        5. Workout the value of $S_100$
+        
+        $s_100 = \frac{3*100^2+100}{2} = \frac{30000+100}{2} = 15050$
+        
+        
+        
+         
+
+
+Question 14.) Let the sequence $u_n$ be defined by the recurrence relation
+    
+    $u_{n+1} = u_n + 2n,\ for\ n = 1, 2, 3, ...\ and\ let\ u_1 = 1.\ Use$
+    mathetmatical induction to show that the nth term, where $n\ge 0$, is given
+    by $u_n = n^2 - n + 1$
+    
+    
+    
+    
+    
+    
+    
+Question 15.) Let $S_n$ be a series defined as follows:
+    
+    $S_n = 1^2 + 2^2 + 3^3 + ... + n^2 = \sum_{k=1}^n k^2$ Use mathematical
+    induction to prove that each positive integer n, 
+    
+    $S_n = \frac{n(n+1)(2n+1)}{6}$
+    
+    
+    
+    
+    
+    
+Question 16.)
+    
+    Let $S_n = \sum_{i=1}^i=n (2i - 1) = n^2\ for\ all\ n\in\Z^+$
+    
+    
+    1. Find $S_1\ and\ S_2$
+
+
+
+    2. $\text{Prove by induction that }S_n = n^2\ for\ all\ n\in\Z^+$
+
+
+
+    
+    
+Question 17.) Use mathematical induction to show that for all integer $n\ge 3,\ 2n+1<2^n$
+    
+    
+    
+    
+    
+    
+
+Question 18.) Given the following sequence defined by $u_{n+2} = 4u_{n+1} - 3u_n$ 
+and initial terms $u_1 = 4\ and\ u_2 = 10$
+
+
+
+
+
+    1. Calculate $u_3$
+
+
+
+    2. Use strong mathematical induction to prove that $u_n = 3^n + 1,\ \forall
+
+
+
+   n\ge 1$
+    
+Question 19.) Use strong mathematical induction to prove that if n is an
+integer greater than 1, then it is either a prime or can be written as the
+product of primes.
+
+
+
+
+

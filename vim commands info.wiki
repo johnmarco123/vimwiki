@@ -1,0 +1,115 @@
+"==============================================
+"INSANE COMMANDS
+"==============================================
+"-------------->FOLDING<-------------
+"zc - C-lose all folds on cursor line
+"zr - r-educe the folding (open all first level folds)
+"zR - R-educes folding UNFOLDS EVERYTHING
+"zm - M-ore folding (folds them back again)
+"zM - M-ore folding (folds everyhting)
+"zn - quickly disables all folds
+"zN - returns the folds back
+"zi - toggles between the two (most useful)
+"zd - deletes the fold on cursor
+"zD - deletes all folds on cursor
+
+
+
+INSERT MODE COMMANDS
+"ctrl-r % insert file name 
+"ctrl-r / insert last search term
+"ctrl-r : insert last command line
+"ctrl-r =1+1 does math!
+"insert mode where you last inserted gi
+" :set nrformats+=alpha (to increment and decrement letters
+" highlight and type :sort to sort alphabetically
+" zj goes to next fold up zk goes to next fold down
+" !! repeat last !{cmd}
+" highlight command w visual mode and type :so to run vimscripts in file
+"
+"
+"-------------->ABBREVIATIONS<-------------
+" c	Command-line mode			:cabbrev
+" !	both Insert and Command-line mode	:abbreviate
+"-------------->AUTOCOMPLETE<-------------
+" If you now press CTRL-N you go back to "/u".  Instead, to accept the "/usr/"
+" and go one directory level deeper, use CTRL-X CTRL-F again:
+" CTRL-X CTRL-F		file names
+" CTRL-X CTRL-L		whole lines
+" CTRL-X CTRL-D		macro definitions (also in included files)
+" CTRL-X CTRL-I		current and included files
+" CTRL-X CTRL-K		words from a dictionary
+" CTRL-X CTRL-T		words from a thesaurus
+" CTRL-X CTRL-]		tags
+" CTRL-X CTRL-V		Vim command line
+"-------------->download from vim<-------------
+"DOWNLOAD ANYTHING BY CLICKING gf on the link
+"-------------------->REPLACE IN ALL FILES<----------------------
+":args *.js for example
+"then :argdo %s/\<x_cnt\>/x_counter/ge | update
+"first open all the vim files with smth like vim * or vim *.js for js files.
+"then record a macros and finish the macro with :wnext to go to the next file,
+"then end the macro.
+"then type @q(or whatever register u used) and ensure no bugs, then do 99@q to
+"do it for the rest.
+"
+"IF A FILE DOES NOT CONTAIN THE WORD UR TRYING TO REPLACE IT WILL STOP THIS
+"COMMAND!
+"to fix this do smth like this
+"   :%s/\><GetResp\>/GetAnswer/ge
+"   the e flag fixes it
+"
+" REPLACE IN ALL FILES, WITHOUT KNOWING WHICH FILES!
+" vim $(Rg -l "SEARCHTERM)
+"-------------------->RUNNING TEXT THROUGH EXTERNAL PROGRAM<----------------------
+"!5Gsort<Enter>
+"runs from 5th line down to end through sort and outputs it under ur cursor
+"-------------------->WRITE TO FILES FROM FAR AWAY<----------------------
+"    "./$write tempo
+"    this write all the lines under the cursor into the file tempo
+"    ".w >> FILE appends to file
+"-------------------->GLOBAL KEYWORD<----------------------
+":g+//+s/foobar/barfoo/g
+"this changes all lines that start with // and inside those lines changes
+"foobar to barfoo for ALL OCCURANCES (the at the end)
+"
+"-------------------->FIND AND REPLACE<----------------------
+"FIND AND REPLACE WITH MARKS
+"mark two areas, then type :'t, 'b%s/AY/BEE/g
+"this changes all occurances of AY to BEE between the two marks
+"-------------------->APPEND TO FILE<----------------------
+"YANK WHATEVER THEN DO :w >> filename to append to it
+"-------------------->COPY FILES QUICKLY<----------------------
+"go to a file and edit whatever, then type :saveas 'filename'
+"this saves the changes to that file, then you can quit the file your in
+"without saving, and you will have a copy of the changes
+"
+"==============================================
+" COMMANDS TO WORK ON INSERT MODE
+"==============================================
+"ctrl k (plus a letter combo) to get a digraphs (GREAT FOR MATH)
+"to see digraphs type :digraphs
+"CTRL Q (enter key for instance) inserts the enter symbol (great for making
+"macros)
+" If you press CTRL-A, the editor inserts the text you typed the last time you
+" were in Insert mode.
+" ctrl-y copies from line above
+" ctrl-e copies from line below
+" CTRL-r ctrl-r then register name to paste with all info including keystrokes
+"==============================================
+" COMMANDS TO WORK ON NORMAL MODE
+"==============================================
+":browse oldfiles to see old files u edited
+"q: to open command line window
+"CTRL D TO SHOW OPTIONS WHEN DOING :EDIT
+"]c goes to next change that happened in a file or [c goes back
+"vim -o file1.txt, file2.txt... opens them horizontally together, and -O does
+"veritcally
+" cis CHANGE IN SENTENCE
+":args (WHATEVER FILES) then can do argdo normal@qw to save
+"-16,-14co. copies 16 lines above to 14 lines above and puts it where u
+"WHEN ON A WORD CLICK * TO GO TO NEXT OCCURANCE, OR # TO GO TO PREV
+"the entire function OR :w (filename) to write it to a new file
+" :s/{WORD TO REPLACE}/{REPLACE WITH THIS}/g {AMOUNT OF LINES FROM CURRENT
+" LINE}
+

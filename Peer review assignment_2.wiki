@@ -1,0 +1,44 @@
+Use the following rules of inference: existential instantiation, universal
+instantiation, disjunctive syllogism, modus tollens and existential
+generalisation to show that:
+
+$If:$
+    * Hypothesis 1: $\forall x(P(x)\lor Q(x))$
+    * Hypothesis 2: $\forall x(\lnot Q(x)\lor S(x))$
+    * Hypothesis 3: $\forall x(R(x)\rightarrow\lnot S(x))$
+    * Hypothesis 4: $\exists x\lnot P(x)\ are\ true$
+     
+$Then: \exists x\lnot R(x)\ is\ true$
+---------------------------------------------------------------
+MY ANSWER BELOW THIS POINT
+---------------------------------------------------------------
+
+* Hypothesis 1: $\forall x(P(x)\lor Q(x))$
+
+* Hypothesis 2: $\forall x(\lnot Q(x)\lor S(x))$
+     
+* Hypothesis 3: $\forall x(R(x)\rightarrow\lnot S(x))$
+ 
+* Hypothesis 4: $\exists x\lnot P(x)\ are\ true$
+
+5.) $\lnot P(x)$                <--$4,\ Existential\ instantiation$
+6.)$P(x)\lor Q(x))$             <--$1,\ Universal\ Instantiation$
+7.) $Q(x)$                      <--$5,\ 6,\ Disjunctive\ syllogism$
+8.)$\lnot Q(x)\lor S(x)$        <--$2,\ Universal\ Instantiation$
+9.)$S(x)$                       <--$7,\ 8,\ Disjunctive\ syllogism$
+10.)$R(x)\rightarrow\lnot S(x))$<--$3,\ Universal\ Instantiation$
+11.) $\lnot R(x)$               <-- $9,\ 10,\ Universal\ modus\ tollens$
+12.)$\exists x \lnot R(x)$      <-- $11,\ Existential\ generalization$
+$Then: \exists x\lnot R(x)\ is\ true$
+
+
+
+
+
+
+
+
+
+
+
+

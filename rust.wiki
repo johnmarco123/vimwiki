@@ -1,0 +1,35 @@
+TODO
+
+== Learning notes ==
+    [[rust_terminal_commands]]
+    [[rust_tests]]
+    [[arrays_tuples_vectors]]
+    [[smart pointers]]
+    [[rust advanced borrows]]
+    [[multiple mutable owners]]
+
+everything starts on the stack, if it is a number it simply
+is just on the stack, if it is a vec (which can grow) it cant be there
+so it points to the heap. therefore EVERYTHING in the heap is being
+pointed to from the stack
+ 
+as we clean up memory on the stack we can clean up memory on the heap for
+FREE
+
+        %% the star copies it rather then becoming owner of it
+        %% return self.points.get(idx).map(|x| *x);
+        
+        %% jonhoo youtube  
+        %% rust book: https://doc.rust-lang.org/stable/book/
+
+<span style="color:#cc241d;">If you unwrap there is usually a better way</span>
+
+<span style="color:#d65d0e;">rules in rust:
+1.) There can only be one value owner
+
+2.) There can be unlimited immutable borrows (reference) with no mutable
+references)
+
+3.) There can be only one mutable reference and no immutable references</span>
+
+arrays <- ON THE STACK! AKA FASTER ( i think )

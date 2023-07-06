@@ -1,0 +1,34 @@
+<span style="color:#a89984;">    to time</span>
+        * heap 
+         
+<span style="color:#d79921;">    searches:</span>
+        * LinearSearch = 36.12
+        * BinarySearch = 1:43.52
+    
+<span style="color:#cc241d;">    sort:</span>
+        * InsertionSort = 10:00 about
+        * BubbleSort = 1:13.55
+        * Quick sort = undefined;
+
+<span style="color:#b16286;">    data structures:</span>
+        * Queue = 3:22.29
+        * Stack = 3:26.70
+        * Doubly linked list = 20:00ishhhh
+        * Singly linked list = 1:00:00?
+        * ArrayList = undefined;
+
+<span style="color:#d65d0e;">    trees:</span>
+        * Depth first (recursive):
+            * DFSONBST
+         
+        * Breadth first (queue & loop)
+            * BTBFS(breadth first search) = 3:11.95
+         
+        * CompareBinaryTrees = 1:30.95
+        * BTPreOrder = 1:01.58
+        * BTPostOrder = 54.20
+        * BTInOrder = 1:03.02
+        * DFSonBT = 1:23. 06
+    
+<span style="color:#98971a;">    undefined:</span>
+        * TwoCrystalBalls = 1:38.69

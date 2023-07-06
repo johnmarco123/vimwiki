@@ -1,0 +1,111 @@
+= Universal instantiation (UI) =
+    * The rule of inference: 
+        * $\forall x\ P(x)$
+        ---------------
+        * $\therefore P(c)$
+    Example:
+    * All computer science students study discrete mathematics
+    ------------------------------------------------------------
+    Therefore, John who is a computer science student, studies discrete
+    mathematics
+
+= Universal generalization (UG) =
+    * The rule of inference:
+        * $P(c)\ for\ an\ arbitrary\ element\ of\ the\ domain$
+       --------------------------------------------------  
+        * $\forall x\ P(x)$
+    Example:
+        * DS = {all data science students}
+        * Let c be an arbitrary element in DS.
+        * c studies machine learning.
+        ------------------------------------------
+        Therefore, $\forall x\ \epsilon DS,\ x\ studies\ machine\ learning$
+        
+= Existential instantiation (EI) =
+    * The rule of inference:
+        * $\exists x\ P(x)$
+       --------------------------------------------------  
+        * $\therefore P(c) for\ some\ elements\ of\ the\ domain$
+    Example:
+        * DS = {all data science students}
+        * There exists a student of data science who uses Python Pandas Library
+        ------------------------------------------
+         $\therefore There\ is\ a\ student\, c,\ who\ is\ using\ Python\ Pandas\ Library$
+        
+= Existential generalization (EG) =
+    * The rule of inference:
+        * $P(c)\ for\ some\ elements\ of\ the\ domain$
+       --------------------------------------------------  
+        * $\therefore\exists x\ P(x)$
+    Example:
+        * DS = {all data science students}
+        * John, a student of data science, got an A in the machine learning
+          course.
+        ------------------------------------------
+         $\therefore There\ exists\ someone\ in\ DS\ who\ got\ an\ A\ in\ machine\ learning$
+         
+= Universal modus ponens =
+    * The rule of inference:
+        * $\forall x\ P(x)\rightarrow Q(x)$
+        * $P(a)\ for\ some\ elements\ of\ the\ domain$
+       --------------------------------------------------  
+        * $Q(a)$
+    Example:
+        * DS = {all computer science students}
+        * John is a computer science student studying data science
+        ------------------------------------------
+         $\therefore John\ will\ study\ machine\ learning$
+
+= Universal modus tollens =
+    * The rule of inference:
+        * $\forall x\ P(x)\rightarrow Q(x)$
+        * $\lnot Q(a)\ for\ some\ elements\ of\ the\ domain$
+       --------------------------------------------------  
+        * $\lnot P(a)$
+    Example:
+        * CS = {all computer science students}
+        * Every computer science student studying data science will study
+          machine learning
+        * John is not studying machine learning
+        ------------------------------------------
+         $\therefore John\ is\ not\ studying\ data\ science$
+         
+
+EXAMPLE 1.)
+    Express the statement S: "There exists a real number between any two not
+    equal real numbers".
+    * The universe of discourse is: real numbers.
+    * Introuce variables and predicates:
+        * "For all real numbers x and y, there exists z between x and y."
+    * Introduce quantifiers and logical operations: 
+        * $\forall x\forall y\ if\ x\ < \ y\ then\exists z\ where\ x\ <\ z\ <\ y$
+
+EXAMPLE 2.)
+    Express the statement S: "Every student has taken a course in machine
+    learning".
+    
+    The expression will depend on the choice of the universe of discourse
+    
+    Case 1: U = {all students}
+        * Let M(x) be: "x has taken  a course in machine learning."
+        * S can be expressed as:$\forall x M(x)$
+    Case 2: U = {all people}
+        * Let S(x) be: "x is a student" and M(x) the same as in case 1
+        * S can be expressed as:$\forall x\ (S(x)\rightarrow M(x))$
+    
+    Note:$\forall x (S(x)\land M(x)) is\ not\ correct$
+    
+EXAMPLE 3.)
+    Express the statement S: "Some studennt has taken a course in machine
+    learning"
+    
+    The expression will depend on the choice of the universe of discourse.
+    
+    Case 1: U = {all students}
+        * Let M(x) be: "x has taken a course in machine learning."
+        * S can be expressed as:$\exists x\ M(x)$
+    Case 2: U = {all people}
+        * Let S(x) be: "x is a student" and M(x) the same as in case 1.
+        * S can be expressed as $\exists x\ (S(x)\land M(x)).$
+    Note: $\exists x\ (S(x)\rightarrow M(x))\ is\ not\ correct\ in\ this\ case$
+    

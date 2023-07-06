@@ -1,0 +1,14 @@
+// wtf? different results here...
+// Anything bigger than (2 ^ 31) - 1 gets fucked by this.
+
+//Perfectly fine for flooring
+console.log(\~\~2147483647) ===> 2147483647
+
+
+//Will turn it negative            V BECOMES A NEGATIVE?!?!
+console.log(\~\~2147483648) ====> -2147483648
+
+DO NOT USE \~\~ ON BIG NUMBERS! USE MATH.FLOOR!!!!
+
+1E4 = 1 * 10 ^ 4 = 10000
+2E5 = 2 * 10 ^ 5 = 200000

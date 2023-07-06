@@ -1,0 +1,123 @@
+Start by saying what the statement is that you want to prove: “Let
+P(n) be the statement. . . ” To prove that P(n) is true for all n ≥ 0,
+you must prove two facts:
+
+1. Base case: Prove that P(0) is true. You do this directly. This is
+often easy.
+2. Inductive case: Prove that P(k) → P(k + 1) for all k ≥ 0. 
+That is, prove that for any k ≥ 0 if P(k) is true, then P(k + 1) is true as
+well. This is the proof of an if . . . then . . . statement, so you can assume
+P(k) is true (P(k) is called the inductive hypothesis). You must then explain
+why P(k + 1) is also true, given that assumption. Assuming you are successful
+on both parts above, you can conclude, “Therefore by the principle of
+mathematical induction,
+the statement P(n) is true for all n ≥ 0.”
+
+
+
+Let's start by proving a simple formula formalized as the propositional
+function, p(n): 1 + 2 + 3 + ... + n = n (n + 1) / 2
+
+In order to prove that a PROPOSITIONAL function P(n) is true for all, we need
+to verify two steps:
+
+    1.) BASIS STEP: where we show that P(1) is true
+
+    2.) INDUCTIVE STEP: where we show that for $\forall k\in \N:$
+        if P(k) is true, called the INDUCTIVE HYPOTHESIS, then P(k + 1 is true).
+    
+Example: 
+    
+    1.) BASIS STEP: The basis step, P(1) reduces to 1 = 1(1 + 1) / 2
+
+    2.) INDUCTIVE STEP: 
+        * Let $\forall k\in\N$
+        * If the inductive hypothesis P(k) is true:
+            * we have 1 + 2 + 3 + ... + k = k(k+1)/2
+            * then, 1 + 2 + 3 + ... + k(k+1)
+                    = k(k + 1)/2 + (k + 1)
+                    = (k(k + 1) + 2 (k + 1)) / 2
+                    = (k + 1) ((k + 1) + 1) / 2
+                    = which verifies, P(k + 1).
+    
+Strong induction:
+    Let's start by proving a simple statement, expressed as the
+    propositional function.
+    $P(n): \forall n\in\N and\ n\ge 2$
+    n is divisible by a prime number.
+    
+    To prove it, we need to verify two steps:
+    1. BASIS STEP, P(2) reduces to 2, which is divisible by a
+       prime number because 2 is a prime number and divides
+       itself.
+
+    2. INDUCITVE STEP: 
+       * $Let\ k\in\N\ be\ greater\ than\ 2$
+       * If the inductive hypothesis is p(k) is true:
+           * Let's also assume P(2)...P(k + 1) is true. Then,
+             $\forall m\in\N\ and\ 2\le m\le k + 1: \exists p$ is a prime
+             number dividing m
+           * We have two cases:
+               * k + 2 is a prime number, in which case it is trivially
+                 divisible by itself
+               * k + 2 is not a prime number, in which case 
+                $\exists m\ dividing\ k + 2$
+               * As $2\leq m\leq k + 1,\ \exists p$ is a prime number
+                 dividing m. p also divides k + 2
+               * Which verifies P(k + 2) is true and proves the strong
+                 induction.
+   
+   = Well-ordering property: =
+   The well-ordering property is an axiom about
+   N that we assume to be true. The axioms about N are the following:
+   
+       1. The number 1 is a positive integer
+       2. If $n\in\N$, then n + 1, the successor of n, is also a positive
+       integer
+       3. Every positive integer other than 1 is the successor of a positive
+       integer
+       4. The well-ordering property: every nonempty subset of the set of
+       positive integers has at least one element.
+    The well-ordering property can be used as a tool in building proofs.
+    
+    Example
+    
+    Let's reconsider the earlier statement P(n): $\exists n\in\N$ and
+    $n\ge 2$, n is divisible by a prime number.
+    
+    Proof:
+        * Let S be the set of positive integers greater than 1 with no
+          prime divisor
+        * Suppose S is non empty. Let n be its smallest element
+        * n cannot be prime, since n divides itself and if n were prime, it
+          would be its own prime divisor
+        * So n is composite: it must have a divisor d with 1 < d < n. Then,
+          d must have a prime divisor (by the minimality of n), let's call
+          it p
+        * then p/d and d/n, so p/n, which is a contradiction
+        * Therefore S is empty, which verifies P(n).
+    
+Mathematical induction -> the well-ordering property
+the well-ordering property -> strong induction
+strong induction -> Mathematical induction 
+        
+That is, the principles of mathematical induction, strong induction
+and well-ordering are all equivalent
+
+In other words, the validity of each of these three proof techniques
+implies the validity of the other two techniques
+
+
+Recursive definitions
+    Let's tige a recursive algorithm for computing n!, where n is a nonnegative
+    integer:
+    
+    * n! can be recursively defined by the following two steps:
+        * BASIS STEP: 0! = 1
+        * RECURSIVE STEP: n! = n(n - 1)! when n is a positive integer
+    * The pseudocode of this algorithms can be formalised as:
+        * procedure factorial(n: nonnegative integer) {
+            if n = 0 then return 1 
+            else
+            return n factorial (n - 1)
+         }
